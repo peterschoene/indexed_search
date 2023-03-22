@@ -69,7 +69,7 @@
                         <td>
                             <f:if condition="{data.static_page_arguments}">
                                 <f:for each="{data.static_page_arguments}" as="value" key="key">
-                                    {key}={value}<br>
+                                    {key}={value->f:format.json()}<br>
                                 </f:for>
                             </f:if>
                         </td>
